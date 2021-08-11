@@ -1,0 +1,691 @@
+body{
+	/*margin: 2rem 5rem;*/
+	margin: 0;
+	/*margin-top: 25px;*/
+	background-image: linear-gradient(50deg, #192b48 0%, #1b1035 60%);
+}
+
+
+/*common class*/
+.adjacent_div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.section_title{
+	color: white;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+
+
+
+
+
+/*header*/
+#logo_container{
+	width: 60%;
+	display: inline-block;
+}
+
+#logo_img{
+	height: 10rem;
+	width: 10rem;
+	display: inline-block;
+}
+
+#logo_img img{
+	height: 100%;
+	width: 100%;
+}
+
+#mp_name_container{
+	height: 10rem;
+}
+
+#mp_name{
+	color: #25c9e4;
+	font-size: 3.5rem;
+	letter-spacing: 0.3rem;
+	margin-left: -2.5rem;
+	text-shadow: 2px 2px 8px #b9b9b9;
+}
+
+#search_box{
+	height: 2.5rem;
+	width: 25rem;
+	margin-top: 30px;
+	border-radius: 10px;
+
+}
+
+#search_box input{
+	font-size: 1rem;
+	height: 100%;
+	width: 100%;
+	border-style: none;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding-left: 40px;
+	background-color: #42326894;
+	color: white;
+}
+
+#search_icon{
+	height: auto;
+	width: auto;
+	position: absolute;
+	display: inline-block;
+}
+
+#search_icon i{
+	font-size: 1.1rem;
+	padding-top: 11px;
+	color: #a2a2a2;
+	margin-left: 0.8rem;
+}
+
+#mic_icon{
+	height: auto;
+	width: auto;
+	display: inline-block;
+	position: absolute;
+	margin-left: -2.2rem;
+}
+
+#mic_icon i{
+	padding-top: 8px;
+	font-size: 1.5rem;
+	color: #6a75b3; 
+}
+
+#bell_icon{
+	position: relative; /*This is to hold [position:absolute] of [#bell_icon i::after] within [#bell_icon]*/
+	height: auto;
+	width: auto;
+	padding: 35px 50px;
+}
+
+#bell_icon i{
+	font-size: 2.2rem;
+	color: #e5e5e5;
+}
+
+#bell_icon i::after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+	top: 37%;
+	right: 39%;
+}
+
+#user_icon{
+	height: auto;
+	width: auto;
+	padding-top: 15px;
+}
+
+#user_icon i{
+	font-size: 4.5rem;
+	color: #e5e5e5;
+}
+
+
+
+
+
+/*main*/
+main{
+	display: inline-block;
+	width: 75%;
+	margin-bottom: 120px;
+}
+
+
+/*favourites*/
+#favourites{
+	margin-left: 50px;
+}
+
+#fav_title{
+	margin-left: 64px;
+}
+
+#fav_container{
+	height: 250px;
+	margin: 60px 0 0 50px;
+	display: flex;
+}
+
+.fav_box{
+	height: 250px;
+	width: 300px;
+	vertical-align: top;
+	position: absolute;
+}
+
+.fav_box img{
+	height: 100%;
+	width: 100%;
+}
+
+#fav1{
+	margin-left: 125px;
+}
+
+#fav2{
+	margin-left: 425px;
+	/*height: 350px;
+	width: 520px;
+	position: relative;
+	right: 110px;
+	bottom: 50px;
+	z-index: 1;*/
+}
+
+#fav3{
+	margin-left: 725px;
+}
+
+.fav_box img:hover{
+	height: 350px;
+	width: 520px;
+	position: relative;
+	right: 110px;
+	bottom: 50px;
+	z-index: 2;
+}
+
+/*.fav_box img:hover #fav2 img{
+	height: 250px !important;
+	width: 300px !important;
+	vertical-align: top !important;
+	position: absolute !important;
+	margin-left: 425px !important;
+	z-index: 0 !important;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*latest_release*/
+#latest_release{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+.latest_container{
+	width: 85%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.latest_box{
+	display: inline-block;
+	min-height: 150px;
+	height: 165px;
+	width: 45%;
+	margin: 14px 0 14px;
+	padding: 5px 5px 2px;
+}
+
+.latest_box:hover{
+	box-shadow: 0px 0px 15px 3px rgba(5, 3, 49, 0.8);
+}
+
+.latest_box div{
+	position: absolute;
+	width: 130px;
+}
+
+.latest_box img{
+	width: 100%;
+}
+
+.latest_box h4{
+	margin: 0px 0 0 150px;
+	padding-top: 50px;
+	color: white;
+	font-weight: 599;
+	font-size: 1.2rem;
+}
+
+.latest_box h5{
+	margin: 10px 0 0 150px;
+	padding-top: 10px;
+	color: white;
+	font-size: 1rem;
+	font-weight: 599;
+}
+
+.latest_box a{
+	position: relative;
+	left: 95%;
+	bottom: 90px;
+	font-size: 20px;
+	color: #c1c0ca;
+}
+
+.latest_box p{
+	position: relative;
+	bottom: 95px;
+	text-align: right;
+	font-size: 14px;
+	padding: 2px;
+	color: #c1c0ca;
+	line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*Popular artisis*/
+#popular_artists{
+	margin-top: 70px;
+	margin-left: 50px;
+}
+
+#popular_container{
+	width: 95%;
+	margin: 45px 0 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.popular_box{
+	width: 170px;
+	height: 170px;
+}
+
+.popular_box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.popular_box img:hover{
+	box-shadow: 0px 0px 25px 10px rgba(75, 73, 121, 0.8);
+}
+
+.popular_box h4{
+	text-align: center;
+	margin-top: 5px;
+	color: white;
+	letter-spacing: 1.5px;
+}
+
+
+
+
+/**/
+
+
+
+
+
+/*Aside*/
+
+aside{
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+}
+
+#queue_dropdown{
+	position: relative;
+	left: 70%;
+	bottom: 50px;
+	font-size: 1.2rem;
+	color: #06dab5;
+	background-color: transparent;
+	border: none; 
+}
+
+#queue_container{
+	width: 95%;
+	margin-top: 10px;
+}
+
+.queue_box{
+	padding: 15px 5px 0;
+	position: relative; /*This is to hold [position:absolute] of [.queue_box>div] & [.queue_box::before] within [.queue_box]*/
+}
+
+.queue_box:hover{
+	box-shadow: 0px 0px 15px 3px rgba(5, 3, 49, 0.8);
+}
+
+.queue_box div{
+	position: absolute;
+	width: 70px;
+	left: 10%;
+}
+
+.queue_box img{
+	width: 100%;
+	border-radius: 10%;
+}
+
+.queue_box div i{
+	position: absolute;
+	top: 38%;
+	right: 38%;
+	color: transparent;
+	/*box-shadow: 0px 0px 25px 10px rgba(71, 69, 113, 0.8);*/
+}
+
+.queue_box h4{
+	margin: 0 0 0 120px;
+	padding-top: 12px;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+}
+
+.queue_box h5{
+	margin: 0 0 0 120px;
+	padding-top: 10px;
+	color: #c1c0ca;
+	font-size: 0.9rem;
+	font-weight: 599;
+}
+
+.queue_box a{
+	position: relative;
+	left: 95%;
+	bottom: 40px;
+	font-size: 20px;
+	color: #c1c0ca;
+}
+
+.queue_box::before{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	color: #c1c0ca;
+	top: 40%;
+}
+
+.queue_box:nth-child(2n)::before{
+	font-family: "Material Icons";
+    content: "\e01d";
+    font-size: 20px;
+    color: #00b5d9;
+
+    /*font-family: "Font Awesome 5 Free";
+    content: "\f012";
+    font-weight: 900;*/
+}
+
+#queue_box1::before{
+	content: '01';	
+}
+
+#queue_box3::before{
+	content: '03';	
+}
+
+#queue_box5::before{
+	content: '05';	
+}
+
+#queue_box7::before{
+	content: '07';	
+}
+
+#queue_box9::before{
+	content: '09';	
+}
+
+.queue_box:hover img{
+	opacity: 0.6;
+}
+
+.queue_box:hover div i{
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Fixed*/
+#player{
+	position: fixed;
+	top: 89.7%;
+	width: 100%;
+	height: 100px;
+	background-color: #2c2c2c;
+}
+
+#player_container{
+	width: 80%;
+	margin: 8px 0 0px 150px;
+}
+
+
+
+
+#player_pic{
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+}
+
+#player_pic img{
+	width: 100%;
+	height: 100%;
+	filter: grayscale(100%);
+}
+
+
+
+
+#player_name{
+	display: inline-block;
+	position: relative;
+	bottom: 2px;
+	left: 7px;
+	height: 80px;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#player_name h3{
+	color: #d0d0d0;
+	margin-bottom: 0;
+	font-weight: 599;
+	letter-spacing: 1.5px;
+}
+
+#player_name p{
+	color: #747474;
+	margin: 10px 0 10px;
+}
+
+
+
+
+#player_icon1{
+	display: inline-block;
+	position: relative;
+	bottom: 44px;
+	left: 20px;
+}
+
+#player_icon1 i{
+	color: #969696;
+	font-size: 20px;
+	margin: 7px;
+}
+
+
+
+#player_range{
+	display: inline-block;
+	position: relative;
+	left: 100px;
+	bottom: 5px;
+}
+
+#range_icons{
+	padding: 0 130px 0;
+}
+
+#range_icons i{
+	color: #969696;
+	font-size: 20px;
+	margin: 0 25px 15px 25px;
+}
+
+#pause i{
+	position: relative;
+	top: 7px;
+	font-size: 47px;
+	color: lightgrey;
+}
+
+#repeat i{
+	position: relative;
+	top: 5px;
+	font-size: 25px;
+}
+
+#range{
+	 
+	/*padding: 10px;*/
+}
+
+#range input{
+	width: 580px;
+}
+
+#range output{
+	position: absolute;
+	right: -27px;
+}
+
+#range span, output{
+	color: #969696;
+	margin-right: 3px;
+}
+
+
+
+#player_icon2{
+	display: inline-block;
+	position: relative;
+	left: 200px;
+	bottom: 20px;
+}
+
+#player_icon2 i{
+	color: #969696;
+	font-size: 25px;
+	margin: 10px;
+}
+
+#playlist i{
+	position: relative;
+	top: 5px;
+	font-size: 35px;
+}
+
+#player_icon2 input{
+	position: relative;
+	right: 8px;
+	bottom: 8px;
+	width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Changing ainbuilt properties of range*/
+input[type = "range"]{
+	appearance : none;
+	height: 5px;
+	border-radius: 30px;
+	/*outline: none !important;*/
+	background: transparent;
+}
+
+
+
+input[type=range]::-moz-range-track {
+    height: 95%;
+    background: #424242;
+    border-radius: 5px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+input[type="range"]::-moz-range-progress {
+  	background-color: #00f787;
+    height: 100%;
+  	border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb:hover {
+    border: none;
+    height: 15px;
+    width: 15px;
+    border-radius: ;
+}
+
+
+
+
+
+
+
+
+
+/*Helpful_sites
+
+https://stackoverflow.com/questions/63392447/how-to-style-input-type-range
+https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html*/

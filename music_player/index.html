@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Payer Screen 1</title>
+
+	<link rel="stylesheet" type="text/css" href="mplayer_screen1.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<div id="logo_container">
+			<div id="logo_img"><!-- for logo -->
+				<img src="static/mplayer_logo.png" alt="It's the the logo"><!-- img site https://www.pngwing.com/en/free-png-zpfux -->
+			</div>
+			<div id="mp_name_container" class="adjacent_div"><!-- for player name -->
+				<h1 id="mp_name">MP</h1>
+			</div>
+		</div>
+		<div id="search_box" class="adjacent_div"><!-- for search box -->
+			<div id="search_icon"><!-- for search symbol -->
+				<a href="">
+					<i class="fas fa-search"></i>
+				</a>
+			</div>
+			<input type="text" name="search" placeholder="Search">
+
+			<div id="mic_icon"><!-- for mic symbol -->
+				<a href="">
+					<i class="fas fa-microphone"></i>
+				</a>
+			</div>
+		</div>
+		<div id="bell_icon" class="adjacent_div"><!-- for bell symbol -->
+			<a href="">
+				<i class="fas fa-bell"></i>
+			</a>
+		</div>
+		<div id="user_icon" class="adjacent_div"><!-- for dp -->
+			<a href="">
+				<i class="fas fa-user-circle"></i>
+			</a>
+		</div>
+	</header>
+
+
+
+	<main>
+		<section id="favourites">
+			<p id="fav_title" class="section_title">Favourites</p>
+			<div id="fav_container">
+				<div id="fav1" class="fav_box">
+					<img src="static/havana.jpg">
+				</div>
+				<div id="fav2" class="fav_box">
+					<img src="static/kaydee.jpg">
+				</div>
+				<div id="fav3" class="fav_box">
+					<img src="static/david_guetta.jpg">
+				</div>
+			</div>
+		</section>
+
+
+
+		<section id="latest_release">
+			<p id="latest_title" class="section_title">Latest Release</p>
+			<div class="latest_container">
+				<div class="latest_box">
+					<div>
+						<img src="static/taylor_swift.jpg">
+					</div>
+					<h4>Onism</h4>
+					<h5>AUG 11, 2017</h5>
+					<a href="">
+						<i class="fas fa-ellipsis-h"></i>
+					</a>	
+					<p> 4:44 </p>
+				</div>
+				<div class="latest_box">
+					<div>
+						<img src="static/taylor_swift.jpg">
+					</div>
+					<h4>Onism</h4>
+					<h5>AUG 11, 2017</h5>
+					<a href="">
+						<i class="fas fa-ellipsis-h"></i>
+					</a>
+					<p> 4:44 </p>
+				</div>
+				<div class="latest_box">
+					<div>
+						<img src="static/taylor_swift.jpg">
+					</div>
+					<h4>Onism</h4>
+					<h5>AUG 11, 2017</h5>
+					<a href="">
+						<i class="fas fa-ellipsis-h"></i>
+					</a>
+					<p> 4:44 </p>
+				</div>
+				<div class="latest_box">
+					<div>
+						<img src="static/taylor_swift.jpg">
+					</div>
+					<h4>Onism</h4>
+					<h5>AUG 11, 2017</h5>
+					<a href="">
+						<i class="fas fa-ellipsis-h"></i>
+					</a>
+					<p> 4:44 </p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="popular_artists">
+			<p id="popular_title" class="section_title">Popular Artists</p>
+			<div id="popular_container">
+				<div class="popular_box">
+					<img src="static/billie_eilish.jpg">
+					<h4>Billie Eilish</h4>
+				</div>
+				<div class="popular_box">
+					<img src="static/eminem.jpg">
+					<h4>Eminem</h4>
+				</div>
+				<div class="popular_box">
+					<img src="static/bruno_mars.jpg">
+					<h4>Bruno Mars</h4>
+				</div>
+				<div class="popular_box">
+					<img src="static/billie_eilish.jpg">
+					<h4>Billie Eilish</h4>
+				</div>
+				<div class="popular_box">
+					<img src="static/eminem.jpg">
+					<h4>Eminem</h4>
+				</div>
+				<div class="popular_box">
+					<img src="static/bruno_mars.jpg">
+					<h4>Bruno Mars</h4>
+				</div>
+			</div>
+			
+		</section>
+	</main>
+
+
+
+
+	<aside>
+		<section id="queue">
+			<p id="queue_title" class="section_title">Queue</p>
+			<select id="queue_dropdown" onchange>
+		        <option selected value="queue">Queue</option>
+		        <option value="playlist">Playlist</option>
+		        <option value="fav_container">Favourites</option>
+		        <option value="random">Random</option>
+        	</select>
+			<div id="queue_container">
+				<div id="queue_box1" class="queue_box">
+					<div>
+						<img src="static/euro_house.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Euro House</h4>
+					<h5>Electronic music</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box2" class="queue_box">
+					<div>
+						<img src="static/lover.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Lover</h4>
+					<h5>Taylor Swift</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box3" class="queue_box">
+					<div>
+						<img src="static/brandon_jones.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Ocean</h4>
+					<h5>Blue Rock Music</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div><div id="queue_box4" class="queue_box">
+					<div>
+						<img src="static/euro_house.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Euro House</h4>
+					<h5>Electronic music</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box5" class="queue_box">
+					<div>
+						<img src="static/lover.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Lover</h4>
+					<h5>Taylor Swift</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box6" class="queue_box">
+					<div>
+						<img src="static/brandon_jones.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Ocean</h4>
+					<h5>Blue Rock Music</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box7" class="queue_box">
+					<div>
+						<img src="static/euro_house.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Euro House</h4>
+					<h5>Electronic music</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box8" class="queue_box">
+					<div>
+						<img src="static/lover.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Lover</h4>
+					<h5>Taylor Swift</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+				<div id="queue_box9" class="queue_box">
+					<div>
+						<img src="static/brandon_jones.jpg">
+						<i class="fas fa-play"></i>
+					</div>
+					<h4>Ocean</h4>
+					<h5>Blue Rock Music</h5>
+					<a href="">
+						<i class="far fa-heart"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+	</aside>
+
+
+
+	<section id="player">
+		<div id="player_container">
+			<div id="player_pic">
+				<img src="static/dua_lipa.jpg">
+			</div>
+			<div id="player_name">
+				<h3>Imagine by Dua Lipa...</h3>
+				<p>Dua Lipa</p>
+			</div>
+			<div id="player_icon1">
+				<a href="">
+					<i class="far fa-heart"></i>
+				</a>
+				<a href="">
+					<i class="fas fa-ban"></i>
+				</a>
+			</div>
+
+			<div id="player_range">
+				<div id="range_icons">
+					<a href="">
+						<i class="fas fa-random"></i>
+					</a>
+					<a href="">
+						<i class="fas fa-step-backward"></i>
+					</a>
+					<a id="pause" href="">
+						<i class="far fa-pause-circle"></i>
+						<!-- <i class="material-icons">pause_circle_outline</i> -->
+					</a>
+					<a href="">
+						<i class="fas fa-step-forward"></i>
+					</a>
+					<a id="repeat" href="">
+						<i class="material-icons">repeat</i>
+					</a>
+				</div>
+				<div id="range">
+					<span>0.00</span>
+					<input type="range" name="range" value="0.00" min="0.01" max="90.09" step="0.01" oninput="num.value = this.value">
+					<output id="num">0.00</output>
+					<!-- <span>4:44</span> -->
+				</div>
+			</div>
+
+			<div id="player_icon2">
+				<a id="playlist" href="">
+					<i class="material-icons">playlist_play</i>
+				</a>
+				<a href="">
+					<i class="material-icons">connected_tv</i>
+				</a>
+				<a href="">
+					<i class="material-icons">volume_up</i>
+				</a>
+				<input type="range" name="volume_range" min="18" max="90" step="5">
+				<a href="">
+					<i class="material-icons">open_in_full</i>
+				</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+
+
+
+
+<!-- Helpful_sites
+
+https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value -->
